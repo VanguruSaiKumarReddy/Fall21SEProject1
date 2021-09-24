@@ -10,8 +10,8 @@ Users can check availability of bikes around his location and book the bike of h
 
 We make it easier for people for their travelling under their budget.
 
-Important Features:
-Contact Us feature
-Live Chat for queries
-Customer Reviews
+Important Features: 
+Contact Us feature,
+Live Chat for queries,
+Customer Reviews,
 Updated News for newly added bikes
