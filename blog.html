@@ -40,13 +40,13 @@
                             <li class="dropdown">
                                 <a class="dropdown-toggle active" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">About</a>
                               
-                                <div class="dropdown-menu">
+                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="about.html">About Us</a>
                                     <a class="dropdown-item" href="blog.html">Blog</a>
-                                    <a class="dropdown-item" href="#">Team</a>
-                                    <a class="dropdown-item" href="#">Testimonials</a>
-                                    <a class="dropdown-item" href="#">FAQ</a>
-                                    <a class="dropdown-item" href="#">Terms</a>
+                                    <a class="dropdown-item" href="team.html">Team</a>
+                                    <a class="dropdown-item" href="testimonials.html">Testimonials</a>
+                                    <a class="dropdown-item" href="faq.html">FAQ</a>
+                                    <a class="dropdown-item" href="terms.html">Terms</a>
                                 </div>
                             </li>
                             <li><a href="contact.html">Contact</a></li> 
@@ -93,7 +93,7 @@
 
                         <p>Phasellus convallis mauris sed elementum vulputate. Donec posuere leo sed dui eleifend hendrerit. Sed suscipit suscipit erat, sed vehicula ligula. Aliquam ut sem fermentum sem tincidunt lacinia gravida aliquam nunc. Morbi quis erat imperdiet, molestie nunc ut, accumsan diam.</p>
                         <div class="main-button">
-                            <a href="#">Continue Reading</a>
+                            <a href="blog-details.html">Continue Reading</a>
                         </div>
                       </article>
 
@@ -106,7 +106,7 @@
                         <p><i class="fa fa-user"></i> John Doe &nbsp;|&nbsp; <i class="fa fa-calendar"></i> 27.07.2021 10:10 &nbsp;|&nbsp; <i class="fa fa-comments"></i>  15 comments</p>
                         <p>Integer dapibus, est vel dapibus mattis, sem mauris luctus leo, ac pulvinar quam tortor a velit. Praesent ultrices erat ante, in ultricies augue ultricies faucibus. Nam tellus nibh, ullamcorper at mattis non, rhoncus sed massa. Cras quis pulvinar eros. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
                         <div class="main-button">
-                            <a href="#">Continue Reading</a>
+                            <a href="blog-details.html">Continue Reading</a>
                         </div>
                       </article>
 
@@ -119,7 +119,7 @@
                         <p><i class="fa fa-user"></i> John Doe &nbsp;|&nbsp; <i class="fa fa-calendar"></i> 27.07.2021 10:10 &nbsp;|&nbsp; <i class="fa fa-comments"></i>  15 comments</p>
                         <p>Fusce laoreet malesuada rhoncus. Donec ultricies diam tortor, id auctor neque posuere sit amet. Aliquam pharetra, augue vel cursus porta, nisi tortor vulputate sapien, id scelerisque felis magna id felis. Proin neque metus, pellentesque pharetra semper vel, accumsan a neque.</p>
                         <div class="main-button">
-                            <a href="#">Continue Reading</a>
+                            <a href="blog-details.html">Continue Reading</a>
                         </div>
                       </article>
                     </section>
@@ -145,7 +145,7 @@
                         <li><br></li>
 
                         <li>
-                            <p><a href="#">Culpa ab quasi in rerum dolorum impedit expedita</a></p>
+                            <p><a href="blog-details.html">Culpa ab quasi in rerum dolorum impedit expedita</a></p>
                             <small><i class="fa fa-user"></i> John Doe &nbsp;|&nbsp; <i class="fa fa-calendar"></i> 27.07.2021 10:10</small>
                         </li>
 
@@ -163,21 +163,75 @@
     </section>
     <!-- ***** Blog End ***** -->
 
-    <!-- ***** Footer Start ***** -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                     <p>
-                        Copyright © 2021
-                    </p>
+    <button class="open-button" onclick="openForm()">Chat</button>
+
+    <div class="chat-popup" id="myForm">
+      <form action="/action_page.php" class="form-container">
+        <h1>Chat</h1>
+    
+        <label for="msg"><b>Message</b></label>
+        <textarea placeholder="Type message.." name="msg" required></textarea>
+    
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+        
+        <!-- ***** Footer Start ***** -->
+        <footer style="background: rgb(250 250 250) !important;box-shadow: 0px 0px 10px rgba(0,0,0,0.15)!important;">
+            <footer class="w-100 py-4 flex-shrink-0">
+                <div class="container py-4">
+                    <div class="row gy-4 gx-5">
+                        <div class="col-lg-4 col-md-6">
+                            <a href="index.html" class="logo"><h3> Bike Rental Website</h3></a>
+                            <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                            <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved. </p>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <h5 class="text-black mb-3">Quick links</h5>
+                            <ul class="list-unstyled text-muted">
+                                <li><a href="index.html" class="active">Home</a></li>
+                                <li><a  href="bikes.html">Bikes</a></li>
+                                <li><a  href="about.html">About Us</a></li>
+                                <li><a  href="blog.html">Blog</a></li>
+                                
+                            </ul>
+                        </div>
+                        <div class="col-lg-2 col-md-6">
+                            <h5 class="text-black mb-3">Quick links</h5>
+                            <ul class="list-unstyled text-muted">
+                                <li><a  href="testimonials.html">Testimonials</a></li>
+                                <li><a  href="faq.html">FAQ</a></li>
+                                <li><a  href="terms.html">Terms</a></li>
+                                <li><a href="contact.html">Contact </a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <h5 class="text-black mb-3">Newsletter</h5>
+                            <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                            <form action="#">
+                                <div class="input-group mb-3">
+                                    <input class="form-control" type="text" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                    <button class="btn btn-primary" id="button-addon2" type="button"><i class="fas fa-paper-plane"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </footer>
+            </footer>
+        </footer>
 
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
+    <script>
+        function openForm() {
+          document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+          document.getElementById("myForm").style.display = "none";
+        }
+        </script>
 
     <!-- Bootstrap -->
     <script src="assets/js/popper.js"></script>
